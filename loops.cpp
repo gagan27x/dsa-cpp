@@ -13,7 +13,6 @@ int main(){
         cout<<endl;
     }
 
-
     int i=0;
     while(i<=n)
     {
@@ -30,7 +29,5 @@ int main(){
         cout<<n;
         n--;
     }while(n!=0);
-
-    
 
 }
