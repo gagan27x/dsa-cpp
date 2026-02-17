@@ -5,7 +5,7 @@ public:
         unordered_map<int,int>mp;
 
         for(int i=nums2.size()-1;i>=0;i--){
-            while(!st.empty() && nums2[i]>=st.top()){
+            while(!st.empty() && st.top()<=nums2[i]){
                 st.pop();
             }
 
