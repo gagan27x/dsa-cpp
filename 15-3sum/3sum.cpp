@@ -18,15 +18,11 @@ public:
 
                 if(sum==0){
                     ans.push_back({nums[i],nums[l],nums[r]});
-
-                     // Skip duplicate left values
-                    while(l < r && nums[l] == nums[l+1]) l++;
-
-                    // Skip duplicate right values
-                    while(l < r && nums[r] == nums[r-1]) r--;
-                    
                     l++;
                     r--;
+
+                    while(l < r && nums[l] == nums[l-1]) l++;
+
                 }
                 else if(sum>0){
                     r--;
